@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    /* background-color: red; */
+    color:white;
+    margin:0;
+}
+
+.main
+{
+    background:linear-gradient(to right,rgba(33, 41, 49,1),rgba(33, 41, 49,0.8), rgba(33, 41, 49,1)),url('/assets/images/bg.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    
+}
+.main .content
+{
+   
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .content .heading
+{
+    width:70%;
+    font-family:"Source Sans Pro", Helvetica, sans-serif;
+    font-size:80px !important;
+    color:#ffff;
+    margin-bottom:16px;
+    text-transform:uppercase !important;
+}
+.main .content .description 
+{
+    width:80%;
+    font-family:"Merriweather, Georgia, serif";
+    font-size:16px;
+    color:#ffff;
+    margin-bottom:16px;
+    font-style:italic;
+    line-height: 2;
+}
+.main .content .arrowWithCircle
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:2px #fff solid;
+    height:50px;
+    width:50px;
+    border-radius:50%;
+}
+.main .content .arrowWithCircle .arrow img
+{
+    height: 25px;
+    
+}
+
+.main .footer
+{
+    font-style:"Source Sans Pro";
+    position: fixed;
+    background:rgba(113, 121, 129,0.5);
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    bottom: 4%;
+    width:90%;
+}
+
+.main .footer .footerHeadings ul,.main .footer .footerSocialIcons ul
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center; 
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    
+}
+.main .footer .footerHeadings ul li
+{
+    text-transform: uppercase;
+    font-size:12px;
+    font-weight:700;
+    /* margin:10px 10px; */
+    height: 100%;
+    padding:22px;
+    color:white;
+    /* background:white; */
+
+}
+.main .footer .footerHeadings ul li:nth-child(1){
+    background-color: white;
+    color:#1e252d;
+}
+.main .footer .footerSocialIcons ul
+{
+
+}
+.main .footer .footerSocialIcons ul li img
+{
+    margin:5px 10px;
+    height:25px;
+    width:25px;
+}
+/* media queries */
+@media(min-width:1500px){
+.main .content .heading
+{
+    width:50%;
+    text-align:center;
+}
+.main .content .description
+{
+    width:70%;
+    text-align:center;
+}
+.main .footer
+{
+    width:80%;
+}
+}
